@@ -1,0 +1,162 @@
+html{
+
+//金卡服务
+  .service-con-position{
+    //margin: 20px 0 30px;
+    position: relative;
+    //left: 8%;
+    margin-bottom: 54px;
+    margin-top: -94px;
+    background-color: #fff;
+    width: 1200px;
+    top: 44%;
+    box-shadow: 0 6px 10px #f7f7f7;
+    .ab-table-box{
+      padding:0;
+      .ab-table-con{
+        font-size: 16px;
+        color:#464646;
+        th,td{
+          padding:20px 0;
+        }
+      }
+    }
+    .red-size{
+      font-size: 20px;
+      color:#cd0303;
+      font-weight: bold;
+    }
+    .open-btn{
+      width:114px;
+      height:40px;
+      line-height: 40px;
+      text-align: center;
+      border: none;
+      border-radius: 4px;
+      color:#fff;
+      background-color:#cd0303;
+      cursor: pointer;
+    }
+  }
+
+
+//支付
+  .service-pay-con{
+    padding:90px 220px 314px 102px;
+    ul{
+      >li{
+        margin-bottom: 26px;
+        font-size: 24px;
+        color:#797979;
+        >label{
+          color: #333333;
+          &.pay-txt{
+            float: left;
+            line-height: 76px;
+            margin-top:24px;
+          }
+        }
+        .sum{
+          vertical-align: middle;
+          font-size: 40px;
+          color:#ff920b;
+        }
+        &:last-of-type{
+          margin-top:24px;
+          border-top:1px solid #e5e6e6;
+        }
+      }
+    }
+  }
+  //三种支付方式
+  .pay-way-lists{
+    margin-left:136px;
+    >li{
+      position: relative;
+      display: inline-block;
+      width:224px;
+      height:74px;
+      line-height: 74px;
+      text-align: center;
+      border: 1px solid #efefef;
+      //transition:all 1s;
+      cursor: pointer;
+      img{
+        vertical-align: middle;
+        margin-right:4px;
+      }
+      .tick-img{
+        display: none;
+      }
+    }
+    .active{
+      border-color:#cd0303;
+      .tick-img{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: -4px;
+      }
+    }
+    li+li{
+      margin-left:20px;
+    }
+  }
+
+
+//会员卡支付
+  .vip-pay-box{
+    margin-left:144px;
+    .vip-item{
+      margin-bottom: 22px;
+    }
+    label{
+      float: left;
+      color:#333333;
+      line-height: 42px;
+    }
+    .vip-input{
+      width:320px;
+      height:38px;
+      line-height: 38px;
+      margin-left:10px;
+      padding-left:20px;
+      border: 1px solid #e5e4e4;
+    }
+    .vip-btn{
+      height: 50px;
+      line-height: 50px;
+      margin:20px 0 0 52px;
+    }
+  }
+
+//微信支付
+  .weixin-pay-box{
+    margin-left:214px;
+    margin-top:10px;
+    overflow: hidden;
+    .weixin-pay-l{
+      float: left;
+      margin-right:76px;
+      margin-top:80px;
+      text-align: center;
+      img{
+        width:194px;
+        height:194px;
+      }
+      .weixin-tip{
+        margin-top:24px;
+        line-height: 28px;
+        font-size: 18px;
+        color:#666666;
+      }
+    }
+
+  }
+
+
+
+
+
+
+}

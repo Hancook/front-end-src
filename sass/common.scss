@@ -1,0 +1,587 @@
+html{
+
+  //reset
+  font-size: 14px;
+  li{list-style: none;}
+  em,i{font-style: normal;}
+  strong{font-family: normal;}
+  p,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+  ul{padding:0; margin:0;}
+
+//所有页面共有样式
+  .l {
+    float: left
+  }
+  .clearfix:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+  }
+
+  .clearfix {
+    *zoom: 1
+  }
+//  banner-center 部分
+  .ab-center{
+    //position:relative;
+    overflow: hidden;
+    height: 234px;
+    &.school-center-bg{
+      background: url('../images/banner_2.png')no-repeat 0 center;
+    }
+    &.major-center-bg{
+      background: url('../images/banner_6.png')no-repeat 0 center;
+    }
+    &.news-center-bg{
+      background: url('../images/banner_4.png')no-repeat 0 center;
+    }
+    &.personality-center-bg{
+      background: url('../images/banner_8.png')no-repeat 0 center;
+    }
+    &.my-file-bg{
+      background: url('../images/banner_9.png')no-repeat 0 center;
+    }
+    &.app-center-bg{
+      background: url('../images/banner_5.png')no-repeat 0 center;
+    }
+    &.service-center-bg{
+      height:346px;
+      background: url('../images/banner_10.png')no-repeat 0 center;
+    }
+  }
+
+  .ab-left-top{
+    margin-top:12px;
+    color:#fff;
+    a{
+      color:#fff;
+    }
+  }
+
+  .ab-text-center{
+    margin-top:36px;
+    text-align: center;
+    .ab-list{
+      margin:24px 0 22px;
+      .ab-list-content{
+        font-size: 18px;
+        a{
+          color:#fff;
+          margin-left: 14px;
+        }
+      }
+    }
+  }
+
+
+  .ab-text-white{
+    font-weight: bold ;
+    font-size: 48px;
+    color:#fff;
+    strong{
+      font-weight: normal;
+    }
+  }
+  .ab-right-bottom{
+    //float: right;
+    position:absolute;
+    top: 36%;
+    right: 0;
+    margin-right:10%;
+    .ab-icon{
+      display: inline-block;
+      height: 26px;
+      line-height: 26px;
+      margin-right:32px;
+      color:#fff;
+      .material-icons{
+        vertical-align: top;
+      }
+    }
+  }
+
+   //tab
+  .tab-group{
+    padding:34px 0 20px;
+    border-bottom: 1px solid #e4e4e4;
+    .ab-btn{
+      display: inline-block;
+      width:104px;
+      height:42px;
+      line-height:42px;
+      text-align: center;
+      color:#838383;
+      &.active{
+        color:#fff;
+        background-color:#d94d4d;
+        a{
+          color:#fff;
+        }
+      }
+    }
+  }
+
+  //  大学排名  共有样式（大学信息、专业信息、我的档案-合适的大学）
+  .school_rank_box{
+    .ab-title{
+      height:50px;
+      border-bottom:1px solid #e4e4e4;
+      .ab-title-left{
+        float: left;
+        color:#666666;
+        font-size: 16px;
+        .ab-title-number{
+          color:#cd0303;
+          padding:0 3px;
+        }
+        .selectpicker{
+          width: 116px;
+          height:32px;
+          padding:0 14px;
+          box-sizing: border-box;
+          margin-left:28px;
+          border: 1px solid #e8e8e8;
+          border-radius: 4px;
+          color:#666666;
+        }
+
+      }
+      .ab-title-right{
+        float:right;
+        margin-top: 16px;
+        color:#999999;
+        font-size: 14px;
+        .ab-checkbox{
+          width: 18px;
+          height: 18px;
+          margin-left:6px;
+          vertical-align: middle;
+        }
+
+      }
+    }
+
+    .ab-list{
+      padding:32px 0;
+      border-bottom: 1px dashed #d7d7d7;
+      overflow: hidden;
+    }
+    .ab-list-left{
+      float: left;
+      .img-circle{
+        float: left;
+        width:104px;
+        height:104px;
+      }
+      .ab-msg{
+        float: left;
+        height:104px;
+        margin-left: 25px;
+      }
+      .ab-list-title{
+        margin:16px 0 18px;
+        font-size: 22px;
+        font-weight: bold;
+        color:#333333;
+
+      }
+      .ab-list-content{
+        margin:0;
+        a{
+          color:#888888;
+        }
+        a+a{
+          margin-left:20px;
+        }
+
+      }
+    }
+    .ab-list-right{
+      float: right;
+      margin-right:42px;
+      margin-top:42px;
+      .ab-list-action{
+        display: inline-block;
+        margin-left:40px;
+        height:26px;
+        line-height:26px;
+        color:#888888;
+        .material-icons{
+          margin-right:6px;
+          vertical-align: middle;
+          em{
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+
+  }
+
+
+//  分类部分（大学信息首页，专业信息首页公用）
+  .classify_list_box{
+    padding:30px 0 14px;
+    font-size: 14px;
+    color:#474747;
+    .course-nav-row{
+      margin-bottom:24px;
+      .hd{
+        width: 76px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: 700;
+        font-size: 14px;
+        //color: #07111b;
+        text-align: right;
+      }
+      .bd{
+        margin-left: 88px
+      }
+    }
+    .btn{
+      display: inline-block;
+      padding:7px 10px;
+      cursor: pointer;
+    }
+    .btn:active, .btn.active {
+      font-size: 14px;
+      background: indianred;
+      color: #fff;
+      border-radius: 2px
+    }
+  }
+
+
+//点击查看更多
+  .ab-bottom-loading{
+    height:50px;
+    line-height: 50px;
+    margin: 18px auto;
+    text-align: center;
+    background-color: #fafafa;
+    button{
+      border: none;
+      background-color: #fff;
+      color: #666666;
+      cursor: pointer;
+      .loading-img{
+        margin-right: 6px;
+        vertical-align: middle;
+
+      }
+    }
+  }
+
+// title-bar公用样式
+  .sc-title-bar{
+    height: 50px;
+    line-height: 50px;
+    &.block{
+      margin-top:20px;
+    }
+    .ab-title-left{
+      float: left;
+      line-height: 50px;
+      font-size: 20px;
+      color: #D84D4A;
+      font-weight: bold;
+      letter-spacing: 1px;
+      .ab-title-msg{
+        color:#838383;
+        padding-left:26px;
+        em{
+          font-size:16px;
+          padding-left:22px;
+        }
+      }
+    }
+    .ab-title-right{
+      float: right;
+      line-height: 50px;
+      .ab-button{
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+        font-size: 12px;
+        color:#464646;
+        &:hover{
+          color:#D84D4A;
+        }
+      }
+
+    }
+    &.border-bottom{
+      border-bottom: 1px solid #e4e4e4;
+    }
+  }
+
+//table  (录取招生、志愿填报)
+  .ab-table-box{
+    padding:20px 0 30px;
+    .ab-table-con{
+      width:100%;
+      border-collapse: collapse;
+      color:#595959;
+      th,td{
+        padding: 10px 0;
+        border: 1px solid #dcdcdc;
+        text-align: center;
+      }
+    }
+  }
+
+//资讯  (热点资讯、大学资讯)
+  .ab-consult-box{
+    .block-items{
+      height: 300px;
+      .item{
+        float:left;
+        width: 24%;
+        margin: 0 0.666%;
+        border-bottom:solid 1px #F2F2F2;
+
+        &:first-child{
+          margin-left: 0;
+        }
+        &:last-child{
+          margin-right: 0;
+        }
+
+        img{
+          display:block;
+          height: 194px;
+          width: 100%;
+        }
+
+
+        .item-title{
+          text-align:center;
+          display:block;
+          height:66px;
+          font-size: 16px;
+          line-height:66px;
+          border:solid 1px #F2F2F2;
+          border-bottom: none;
+          border-bottom: none;
+        }
+
+        &:hover{
+          border-bottom:solid 2px #FFDD00;
+        }
+
+      }/* .item */
+
+
+    }/* .block-items */
+
+    .rc-schools-block{
+      height: 270px;
+    }
+
+    .rc-news-block{
+      height: 330px;
+
+      .news-item{
+        width: 22%;
+        margin: 0 2%;
+        img{
+          height: 140px;
+        }
+        p{
+          margin:0;
+        }
+        .info{
+          font-size:14px;
+          font-weight: bold;
+          line-height:22px;
+          padding: 8px 0 0 0;
+          color:#999;
+          margin:0;
+        }
+
+        .title{
+          width:264px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow:hidden;
+          display:block;
+          height: 44px;
+          line-height:44px;
+          font-size:16px;
+          border-bottom: solid 1px #D9DEE4;
+        }
+
+        .summary{
+          padding: 8px 0 4px 0;
+          font-size:15px;
+          color:#969696;
+          line-height: 1.7;
+        }
+
+        a.goto{
+          transition: background-position 0.5s;
+          display:block;
+          width: 164px;
+          height: 40px;
+          margin-top: 10px;
+          border:solid 1px #E5E5E5;
+          background:url(../images/arrow_1.png) no-repeat 7px 8px;
+          &:hover{
+            background-color: #D94D4C;
+            background-position: 90px 8px;
+          }
+        }
+
+        border-bottom: none;
+        &:hover{
+          border-bottom: none;
+        }
+      } /* .rc-news-block */
+
+    } /* .block-items */
+
+  }
+
+
+//  毕业从事最多的行业或城市 list公共
+  .sc-recommend-box{
+    overflow: hidden;
+    .item{
+      float: left;
+      width:23.8%;
+      height:190px;
+      margin-right:1.6%;
+      &:last-child{
+        margin-right:0;
+      }
+      .item-img{
+        float: left;
+        width:100%;
+        height:135px;
+        cursor: pointer;
+        background-size: 100% 100%;
+      }
+      .sc-img-bg,.sc-admit{
+        background: url(../images/page_pic_1.png) no-repeat center center;
+      }
+      .sc-feature{
+        background: url(../images/page_pic_4.png) no-repeat center center;
+      }
+      .sc-money{
+        background: url(../images/page_pic_2.png) no-repeat center center;
+      }
+      .sc-study{
+        background: url(../images/page_pic_3.png) no-repeat center center;
+      }
+      .sc-abroad{
+        background: url(../images/page_pic_4.png) no-repeat center center;
+      }
+      .inner-box{
+        display: block;
+        height: 120px;
+        line-height: 120px;
+        margin: 6px;
+        transition: font-size 0.4s;
+        font-size: 40px;
+        text-align: center;
+        border: solid 1px #ffffff33;
+        color: #fff;
+        &:hover{
+          font-size: 50px;
+        }
+
+      }
+
+      .sc-title{
+        border: solid 1px #ECECEC;
+        font-size: 16px;
+        text-align: center;
+        font-weight: normal;
+        line-height: 53px;
+      }
+
+    }
+    //  就业前景
+    //  共有样式与专业信息
+    &.em-show-con{
+      .item{
+        width:18.7%;
+        height:150px;
+        margin-right: 1.6%;
+        margin-bottom:20px;
+        &:nth-of-type(5n){
+          margin-right: 0;
+        }
+        .item-img{
+          height:106px;
+        }
+        .sc-title{
+          line-height:42px;
+          font-weight: normal;
+        }
+
+        .sc-occupation{
+          background: url(../images/work_network.jpg) no-repeat center center;
+        }
+        .sc-cites{
+          background: url(../images/city.jpg) no-repeat center center;
+        }
+      }
+    }
+  }
+
+//进度条
+  .progress-bar{
+    display: inline-block;
+    width:100%;
+    box-sizing: border-box;
+  }
+  .progress-bar__outer{
+    height:13px;
+    border-radius: 100px;
+    background-color: #dddddd;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+  }
+  .progress-bar__inner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #cd0303;
+    text-align: right;
+    border-radius: 100px;
+    line-height: 1;
+    white-space: nowrap;
+  }
+  .progress-bar__innerText{
+    vertical-align: middle;
+    color: #fff;
+    font-size: 12px;
+    margin: 0 5px;
+  }
+
+
+//添加大学和专业的框
+  .add-app-box{
+    width:56px;
+    height:56px;
+    line-height: 56px;
+    margin:0 auto;
+    text-align: center;
+    border: 1px dashed #a8a8a8;
+    cursor: pointer;
+    img{
+      margin-top:20px;
+    }
+  }
+
+
+
+
+
+}

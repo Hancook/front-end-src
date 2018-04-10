@@ -1,0 +1,107 @@
+html{
+
+//特征评估   我的评估
+  .ab-personality-center{
+      .ab-title-top{
+        margin:30px 0 42px;
+        text-align: center;
+        .ab-title-txt{
+          display: inline-block;
+          line-height: 26px;
+          margin-right: 50px;
+          font-size: 16px;
+          color: #464646;
+        }
+        .title-circle{
+          display: inline-block;
+          width:26px;
+          height:26px;
+          margin-right: 18px;
+          border-radius: 100%;
+          vertical-align: top;
+          &.my-position{
+            background-color: #d94d4d;
+          }
+          &.other-position{
+            background-color: #04b2fb;
+          }
+        }
+      }
+
+    .ab-con-center{
+      li{
+        margin-bottom: 70px;
+        .con-name{
+          font-size: 22px;
+          color:#464646;
+        }
+        .ab-con-liner{
+          position: relative;
+          height:14px;
+          margin:20px 0;
+          background-color: #d3d3d3;
+          border-radius: 100px;
+          .circle-line{
+            position: absolute;
+            top:-95%;
+            display: inline-block;
+            width:40px;
+            height:40px;
+            border-radius: 100%;
+            &.my-position-line{
+              background-color: #d94d4d;
+              left:12%;
+            }
+            &.other-position-line{
+              background-color: #04b2fb;
+              left:30%;
+            }
+          }
+
+
+        }
+        .con-bottom-txt{
+          overflow: hidden;
+          font-size: 18px;
+          color:#666666;
+          .l{
+            float: left;
+          }
+          .r{
+            float: right;
+          }
+        }
+      }
+    }
+  }
+//评估分析
+  .personal-analyze-center{
+    padding:34px 0 60px;
+    .personal-analyze-lists{
+      overflow: hidden;
+      ul{
+        li{
+          float: left;
+          width:377px;
+          height:192px;
+          margin-right: 32px;
+          margin-bottom:28px;
+          text-align: center;
+          background: url('../images/most_enroll.png') no-repeat 0 center;
+          &:nth-of-type(3n){
+            margin-right:0;
+          }
+          .tip-txt{
+            margin:80px 0 24px;
+            font-size: 18px;
+            color:#fff;
+          }
+
+        }
+      }
+    }
+
+  }
+
+
+}

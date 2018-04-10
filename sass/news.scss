@@ -1,0 +1,103 @@
+html{
+  .debug-random{
+    width: random(9999);
+  }
+  //资讯列表
+  .news-list{
+    margin-bottom: 32px;
+
+  }
+  .ab-consult-center{
+    margin-top:12px;
+    ul{
+      li{
+        overflow: hidden;
+        padding:24px 0;
+        border-bottom: 1px dashed #d3d3d3;
+        border-right: 4px solid transparent;
+        &:hover{
+          border-right: 4px solid #b1b0b0;
+          background-color: #f6f6f6;
+        }
+        .consult-img{
+          float: left;
+          height:140px;
+        }
+        .ab-consult-txt{
+          margin-left:24%;
+          margin-right:30px;
+          .txt-title{
+            font-size: 16px;
+            color:#272727;
+            .video-img{
+              margin-left:18px;
+              vertical-align: middle;
+            }
+          }
+          .txt-con{
+            margin:18px 0 28px;
+            line-height: 1.7;
+            color:#888888;
+          }
+          .txt-time{
+            color:#bbbbbb;
+          }
+        }
+      }
+    }
+  }
+
+
+
+//  news-show咨询详情
+  .news-show{
+    margin-bottom:62px;
+  }
+  .ab-consult-show{
+    margin-top:46px;
+    .title-name{
+      margin-bottom: 50px;
+      font-weight: normal;
+      font-size: 28px;
+      color:#333333;
+    }
+    .person-action{
+      line-height: 1.5;
+      margin-bottom: 50px;
+      padding:20px 35px 20px 24px;
+      font-size: 18px;
+      border-left: 2px solid #be0405;
+      color:#666668;
+      background-color: #f8f8f8;
+    }
+    .consult-show-con{
+      text-indent: 40px;
+      font-size: 16px;
+      color:#333333;
+      letter-spacing: 2px;
+      line-height: 1.5;
+    }
+    .article-bottom{
+      margin-top:36px;
+      li{
+        display: inline-block;
+        color:#666666;
+        font-size: 16px;
+      }
+      li+li{
+        margin-left:36px;
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,278 @@
+html{
+
+//我的档案  合适的学校
+ .personal-box{
+   overflow: hidden;
+   padding:36px 0 24px;
+   .ab-personal-img{
+     float: left;
+     width:114px;
+     height:114px;
+   }
+   .ab-personal-txt{
+      margin-left:132px;
+      margin-top:30px;
+     .stu-name{
+       margin-right: 16px;
+       font-size: 24px;
+       color:#464646;
+     }
+     .stu-school{
+       font-size: 18px;
+       color: #666666;
+       .edit-img{
+         vertical-align:middle;
+         margin-left: 10px;
+       }
+     }
+     .txt-num-bottom{
+       margin-top:20px;
+       font-size: 18px;
+       color:#464646;
+       em{
+         padding:0 6px;
+         font-weight: bold;
+         color:#cd0303;
+       }
+     }
+   }
+
+ }
+
+  .ab-personal-school{
+    height:50px;
+    margin-top:20px;
+    font-size: 16px;
+    color:#666666;
+    border-bottom:1px solid #e4e4e4;
+    em{
+      padding:0 6px;
+      font-weight: bold;
+      color:#cd0303;
+    }
+  }
+
+//  进度条
+  .ab-list-bar{
+    position: relative;
+    display: inline-block;
+    width:84px;
+    margin-left:6px;
+  }
+  .progress-bar{
+    display: inline-block;
+    width:100%;
+    box-sizing: border-box;
+  }
+  .progress-bar__outer{
+    height:13px;
+    border-radius: 100px;
+    background-color: #dddddd;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+  }
+  .progress-bar__inner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #cd0303;
+    text-align: right;
+    border-radius: 100px;
+    line-height: 1;
+    white-space: nowrap;
+  }
+  .progress-bar__innerText{
+    vertical-align: middle;
+    color: #fff;
+    font-size: 12px;
+    margin: 0 5px;
+  }
+
+
+  //修改档案
+
+  .ab-msg-lists{
+     padding-top:38px;
+      ul{
+        width:1010px;
+        li{
+          display: inline-block;
+          width:500px;
+          height: 40px;
+          line-height: 40px;
+          margin-bottom: 24px;
+          .msg-con{
+            display: inline-block;
+            color:#999999;
+            margin-left:28px;
+          }
+
+          .chaxun-btn{
+            width:130px;
+            height:42px;
+            line-height: 42px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: none;
+            background-color: #cd0303;
+            color:#fff;
+            cursor: pointer;
+          }
+          .tip-txt{
+            margin-left:22px;
+            color:#999999;
+          }
+        }
+
+      }
+  }
+
+  .profile-name{
+    display: inline-block;
+    width:88px;
+    text-align: right;
+    color:#333333;
+    .impor-symbol{
+      display: inline-block;
+      margin-right:8px;
+      font-weight: bold;
+      color:#cd0303;
+    }
+  }
+  .msg-con-select{
+    display: inline-block;
+    .select-picker{
+      width: 340px;
+      height: 38px;
+      padding: 0 14px;
+      box-sizing: border-box;
+      margin-left: 18px;
+      border: 1px solid #e8e8e8;
+      color: #666666;
+      &.select-long-picker{
+        width:852px;
+      }
+    }
+  }
+
+.ab-other-msg-lists{
+  padding-top:36px;
+  ul{
+    li{
+      width:100%;
+      line-height: 40px;
+      margin-bottom: 24px;
+      .msg-hot-name{
+        margin-left:114px;
+        color:#999999;
+      }
+    }
+  }
+
+}
+
+.next-btn{
+   margin:38px 0 62px;
+  text-align: center;
+  .btn{
+    width:144px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color:#fff;
+    background-color: #cd0303;
+    cursor: pointer;
+  }
+}
+
+
+
+//我的档案填写
+//  banner公共样式
+  .ab-step-box{
+    ul{
+      li{
+        display: inline-block;
+        height:55px;
+        line-height: 55px;
+        text-align: center;
+        font-size: 18px;
+        color:#666666;
+        &.step-img-first{
+          width:231px;
+          color:#fff;
+          background: url("../img/my-step-first.png")no-repeat 0 center;
+        }
+        &.second-process-img{
+          width:293px;
+          background: url("../img/my-second-process.png")no-repeat 0 center;
+          &.second-active{
+            color:#fff;
+            background: url("../img/my-second-active.png")no-repeat 0 center;
+          }
+        }
+        &.third-process-img{
+          width:265px;
+          background: url("../img/my-third-process.png")no-repeat 0 center;
+          &.third-active{
+            color:#fff;
+            background: url("../img/my-third-active.png")no-repeat 0 center;
+          }
+        }
+        .num{
+          margin-right: 14px;
+          vertical-align: top;
+          font-size: 27px;
+          font-weight: bold;
+          //color:#666666;
+          &.num-active{
+            color:#fff;
+          }
+        }
+      }
+    }
+  }
+
+//创建基本信息
+  .my-porfile{
+    .title-tip{
+      line-height: 50px;
+      margin-left:20px;
+      font-size: 16px;
+      color:#666666;
+      letter-spacing: 2px;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

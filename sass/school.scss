@@ -1,0 +1,370 @@
+html{
+  .debug-random{
+     width: random(9999);
+   }
+  /*school-list  大学信息列表*/
+  .school-list{
+    margin-bottom:32px;
+  }
+
+
+/*school-show  大学详情*/
+  .school-show{
+  // 校长对您说
+    .ab-list-box{
+     overflow: hidden;
+     padding:38px 0 34px;
+      .ab-list-img{
+        float: left;
+      }
+      .img-circle{
+        width:154px;
+        height:150px;
+      }
+      .ab-list-content{
+        margin-top:14px;
+        margin-left:16%;
+        .ab-list-title{
+          margin-bottom:20px;
+          font-size: 16px;
+          color:#272727;
+        }
+        .ab-list-txt{
+          display: inline-block;
+          line-height: 1.8;
+          font-size: 14px;
+          color:#888888;
+        }
+        .show-all{
+          color:#d94d4d;
+          cursor: pointer;
+          .show-all-icon{
+            display: inline-block;
+            width:14px;
+            height:9px;
+            background: url(../images/arrow_4.png) no-repeat 0 center;
+          }
+        }
+      }
+
+    }
+
+  //  大学简介 图片列表
+    .ab-boxes{
+      margin-top:32px;
+      text-align: center;
+       .ab-box{
+         float: left;
+         margin-right:8px;
+         &:last-of-type{
+           margin-right: 0;
+         }
+         .card{
+           width:160px;
+           height: 100px;
+           display: table-cell;
+           vertical-align: bottom;
+
+         }
+         .card-title{
+           width:160px;
+           height: 30px;
+           line-height: 30px;
+           color:#fff;
+           background: url(../img/lucency.png) no-repeat 0 center;
+         }
+         .card-map{
+           background: url(../img/page_pic_1.png) no-repeat 0 center;
+         }
+         .card-video{
+           background: url(../img/page_pic_2.png) no-repeat 0 center;
+         }
+         .card-food{
+           background: url(../img/page_pic_3.png) no-repeat 0 center;
+         }
+         .card-bonus{
+           background: url(../img/page_pic_4.png) no-repeat 0 center;
+         }
+         .card-school{
+           background: url(../img/page_pic_5.png) no-repeat 0 center;
+         }
+         .card-notebook{
+           background: url(../img/page_pic_6.png) no-repeat 0 center;
+         }
+
+       }
+    }
+
+
+  //  教学科研
+    .ab-circle-boxes{
+      padding:36px 2px 46px;
+      overflow: hidden;
+      .ab-circle-box{
+        float: left;
+        width:106px;
+        margin-right:108px;
+        margin-bottom:20px;
+        text-align: center;
+        &:nth-of-type(6n){
+          margin-right:0;
+        }
+         .ab-circle{
+           box-sizing: border-box;
+           width:104px;
+           height:104px;
+           border-radius: 100%;
+           box-shadow: 0 0 3px;
+         }
+        .circle-inner{
+          line-height: 104px;
+          font-size: 24px;
+        }
+        .ab-colorful-1{
+          border:2px solid #3cc36f;
+        }
+        .ab-colorful-2{
+          border:2px solid #fe9720;
+        }
+        .ab-colorful-3{
+          border:2px solid #9a34ff;
+        }
+        .ab-colorful-4{
+          border:2px solid #0acbff;
+        }
+        .ab-colorful-5{
+          border:2px solid #68cccc;
+        }
+        .ab-colorful-6{
+          border:2px solid #9accff;
+        }
+        .ab-color-1{
+          color:#3cc36f;
+        }
+        .ab-color-2{
+          color:#fe9720;
+        }
+        .ab-color-3{
+          color:#9a34ff;
+        }
+        .ab-color-4{
+          color:#0acbff;
+        }
+        .ab-color-5{
+          color:#68cccc;
+        }
+        .ab-color-6{
+          color:#9accff;
+        }
+        .ab-circle-name{
+          display: inline-block;
+          margin-top:16px;
+          font-size: 16px;
+          color:#464646;
+        }
+      }
+    }
+
+
+  //  大学风景
+    .ab-view-box{
+      overflow: hidden;
+      padding:0 0 26px;
+      .ab-view-img-box{
+        height: 346px;
+        margin-bottom: 16px;
+        .ab-view-left{
+          float: left;
+          width:568px;
+        }
+        .ab-view-right{
+          width:632px;
+          margin-left: 594px;
+          ul{
+            li{
+              position: relative;
+              display: inline-block;
+              width: 265px;
+              height: 152px;
+              margin-right: 32px;
+              margin-bottom: 37px;
+              &:nth-of-type(2n){
+                margin-right: 0;
+              }
+              .sc-view-bg{
+                width: 100%;
+                height: 152px;
+              }
+              .last-view-bg{
+                position: absolute;
+                top:0;
+                width: 100%;
+                height: 152px;
+                line-height: 152px;
+                text-align: center;
+                background: url(../img/shadow-bg.png) no-repeat 0 center;
+                .num{
+                  display: inline-block;
+                  width: 100px;
+                  transition:font-size 0.4s;
+                  font-size: 24px;
+                  color: #fff;
+                  cursor: pointer;
+                  &:hover{
+                    font-size: 40px;
+                  }
+                }
+              }
+            }
+
+          }
+        }
+      }
+
+
+      .ab-view-site{
+        //float: left;
+        font-size: 16px;
+        color:#464646;
+        p{
+          line-height: 36px;
+        }
+      }
+    }
+
+  }
+
+  /*school-admission  录取招生*/
+  // 录取招生中的bar公共样式
+  .ab-title-admin-right{
+    float: right;
+    ul{
+      li{
+        display: inline-block;
+        height: 16px;
+        line-height: 16px;
+        border-left: 3px solid #838383;
+        span{
+          padding-left:10px;
+        }
+        &.ab-colorful-lowest{
+          border-color:#02be07;
+          color:#02be07;
+        }
+        &.ab-colorful-ave{
+          border-color:#08a3d6;
+          color:#08a3d6;
+        }
+        &.ab-colorful-my{
+          border-color:#d94d4d;
+          color:#d94d4d;
+        }
+      }
+      li+li{
+        margin-left: 24px;
+      }
+    }
+  }
+  .mt30{
+    margin-top:30px;
+  }
+  .school-admission{
+
+  }
+  /*school-employment-report  就业前景*/
+  .school-employment-report{
+    margin-bottom: 56px;
+  }
+
+  /*school-major  大学-专业*/
+
+   .school-major{
+     margin-bottom: 60px;
+     .sc-recommend-box{
+       .item-five{
+         width:18.6%;
+       }
+     }
+   }
+
+  /*school-album  大学风景相册*/
+  .school-album{
+    margin-bottom: 30px;
+    .sc-album-content{
+      overflow: hidden;
+      padding:30px 0;
+      ul{
+        li{
+          float: left;
+          width:31%;
+          height:226px;
+          margin-bottom:20px;
+          margin-right:3.5%;
+          &:nth-of-type(3n){
+            margin-right:0;
+          }
+          .actual-width{
+            width: 100%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+//  弹窗
+  .dialog-wrapper{
+    overflow: hidden;
+    width:100%;
+    height:100vh;
+    background-color:rgba(127,127,127, 0.5);
+  }
+  .ab-dialog{
+    overflow: hidden;
+    margin: 15vh auto 50px;
+    background-color:rgba(255,255,255, 0.5);
+
+  }
+  .album-carousel {
+    height: 500px;
+    margin-top: 14%;
+    .prev-arrow {
+      float: left;
+      width: 50px;
+      height: 50px;
+      margin-top: 10%;
+      border: solid 1px #E5E5E5;
+      cursor: pointer;
+      background: url(../images/arrow_2.png) no-repeat center center #fff;
+      &:hover{
+        background-color: #f9f9f9;
+      }
+    }
+    .next-arrow {
+      float: right;
+      width: 50px;
+      height: 50px;
+      margin-top: 10%;
+      border: solid 1px #E5E5E5;
+      cursor: pointer;
+      background: url(../images/arrow_3.png) no-repeat center center #fff;
+      &:hover{
+        background-color: #f9f9f9;
+      }
+    }
+    .items {
+      float: left;
+      width: 1050px;
+      margin-left: 30px;
+      .item {
+        //height: 100px;
+        margin: 0 1%;
+        text-align: center;
+        font-size: 14px;
+        img{
+          width:100%;
+        }
+      }
+    }
+  }
+}

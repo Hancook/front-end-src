@@ -1,0 +1,153 @@
+html{
+  .debug-random{
+    width: random(9999);
+  }
+  //  登录页面
+  .ab-center-screen{
+    overflow: hidden;
+    box-sizing: border-box;
+    height:514px;
+    margin: 30px 0 64px;
+    padding:40px 60px;
+    border: 1px solid #999999;
+    .ab-login-left{
+      float: left;
+      width:600px;
+      height:436px;
+      border-right: 1px solid #cdcdcd;
+      .ab-login-title{
+        line-height: 100px;
+        margin: 40px 0 40px 94px;
+        font-size: 36px;
+        color:#171717;
+      }
+    }
+    .ad-login-right{
+      position: relative;
+      float:right;
+      width:402px;
+      margin-top:40px;
+      .nav-border{
+        .nav-active-txt{
+          margin-left: 34px;
+          margin-bottom: 4px;
+          display: inline-block;
+          font-size: 18px;
+          color:#ce0606;
+        }
+      }
+      //.nav-active-position{
+      //  position: absolute;
+      //  width:182px;
+      //  text-align: center;
+      //
+      //}
+      .coo-login-icon-box{
+        margin-top:70px;
+        padding:0 10px;
+        text-align: center;
+        color:#828282;
+        ul{
+          padding:0;
+          li{
+            display: inline-block;
+            width:70px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            img{
+              margin-bottom:14px;
+            }
+          }
+          li+li{
+            margin-left:80px;
+          }
+        }
+
+      }
+      .ab-tips{
+        margin-top:66px;
+        font-size: 16px;
+        letter-spacing: 2px;
+      }
+
+      .bind-phone-box{
+        margin-top:24px;
+        text-align: center;
+        color:#828282;
+        .bind-phone-item{
+          padding:0;
+          li{
+            width:402px;
+            height:44px;
+            line-height: 44px;
+            .phone-num{
+              width:384px;
+              line-height: 40px;
+              padding-left:16px;
+              border: 1px solid #cdcdcd;
+            }
+
+            .message-code{
+              width:234px;
+              line-height: 40px;
+              border: 1px solid #cdcdcd;
+              padding-left:16px;
+            }
+            .message-code-btn{
+              width:130px;
+              line-height: 40px;
+              margin-left:15px;
+              border:none;
+              color:#fff;
+              background-color: #049fe0;
+              cursor: pointer;
+            }
+            .confirm{
+              display: inline-block;
+              width: 100%;
+              font-size: 18px;
+              color:#fff;
+              background-color: #ce0606;
+              cursor: pointer;
+            }
+
+          }
+          li+li{
+            margin-top:26px;
+          }
+        }
+      }
+    }
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

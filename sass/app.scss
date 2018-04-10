@@ -1,0 +1,109 @@
+html{
+//志愿填报
+  .app-list{
+    margin-bottom:50px;
+  }
+
+//  填报指南
+  .vol-guide-lists{
+    padding:16px 0 40px;
+    ul{
+      li{
+        display: inline-block;
+        margin-right: 134px;
+        margin-bottom:22px;
+        a{
+          color:#838383;
+          &:hover{
+            color:#d94d4d;
+          }
+        }
+
+      }
+    }
+
+  }
+// 特征匹配进度条
+  .vol-match-liner{
+    position: relative;
+    display: inline-block;
+    width:154px;
+    .progress-bar__outer{
+      height:22px;
+    }
+    .progress-bar__inner{
+      background-color: #02be07;
+      text-align:center;
+    }
+    .progress-bar__innerText{
+      line-height: 22px;
+      font-size: 14px;
+    }
+
+   &.admit-liner{
+     .progress-bar__inner{
+       background-color: #d94d4d;
+       text-align:center;
+     }
+   }
+  }
+
+.vol-arrow-img{
+  display: inline-block;
+  width:20px;
+  margin-right: 20px;
+  vertical-align: middle;
+  img{
+    width: 12px;
+    cursor: pointer;
+  }
+  .arrow-top{
+    margin-bottom:6px;
+  }
+}
+.remove-img{
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+
+
+ .table-l{
+   float: left;
+   margin-top:52px;
+   .circle-A{
+     display: block;
+     width: 34px;
+     height: 34px;
+     line-height: 34px;
+     margin:16px 0;
+     text-align: center;
+     border-radius: 100%;
+     color:#fff;
+     background-color: #d94d4d;
+   }
+ }
+  .table-r{
+    float: left;
+    text-align: center;
+    margin-left: 22px;
+    .school-img{
+      width:118px;
+      height: 118px;
+    }
+    .school-name{
+      margin-top:14px;
+      font-size: 16px;
+      color:#292929;
+    }
+    .min-score{
+      margin:18px 0 14px;
+    }
+  }
+
+//  智能填报
+  .app-auto-recommend{
+    margin-bottom:50px;
+  }
+
+}
